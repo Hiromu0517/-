@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>自己紹介ページ</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 40px 30px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            line-height: 1.7;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #eee;
+        }
+        .social-links {
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #555;
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+        .timeline {
+            margin: 30px 0;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+        .timeline-event {
+            margin-bottom: 18px;
+            position: relative;
+        }
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -13px;
+            top: 3px;
+            width: 10px;
+            height: 10px;
+            background: #4caf50;
+            border-radius: 50%;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .skill-item {
+            display: flex;
+            align-items: center;
+            background: #f0f4f8;
+            border-radius: 6px;
+            padding: 8px 14px;
+            font-size: 1em;
+        }
+        .skill-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        .gallery {
+            display: flex;
+            gap: 12px;
+            margin: 18px 0;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #eee;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 8px;
+            }
+            .gallery img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+    <!-- アイコン用FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://placehold.jp/120x120.png" alt="プロフィール画像" class="profile-img">
+        <h1>小山 博夢</h1>
+        <div class="social-links">
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>
+            こんにちは！私は<strong>小山博夢</strong>です。<br>
+            AI技術やプログラミングに情熱を持ち、日々新しい知識やスキルの習得に励んでいます。<br>
+            <br>
+            <strong>主な関心分野：</strong> 機械学習・深層学習、Webアプリ開発、データ分析、自然言語処理。<br>
+            <br>
+            趣味は読書や写真撮影、旅行、そして新しいガジェットや技術を試すことです。<br>
+            このページでは、私の自己紹介や活動内容、スキルセットなどを紹介しています。<br>
+            どうぞよろしくお願いします！
+        </p>
+        <h2>経歴</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <strong>2020年4月</strong> - ○○大学 情報工学部 入学
+            </div>
+            <div class="timeline-event">
+                <strong>2022年8月</strong> - AIプロジェクトにて画像認識モデル開発
+            </div>
+            <div class="timeline-event">
+                <strong>2023年4月</strong> - Webアプリ開発インターン参加
+            </div>
+            <div class="timeline-event">
+                <strong>2024年3月</strong> - データ分析コンペティション入賞
+            </div>
+        </div>
+        <h2>スキル</h2>
+        <div class="skills-list">
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                Python・機械学習
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                Web開発（HTML, CSS, JavaScript）
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="データ分析">
+                データ分析・SQL
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                PyTorch
+            </div>
+        </div>
+        <h2>趣味の写真</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="自然風景">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="読書">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="カメラ">
+        </div>
+        <h2>連絡先</h2>
+        <p>
+            メール: <a href="mailto:example@example.com">example@example.com</a><br>
+            お気軽にご連絡ください！
+        </p>
+    </div>
+</body>
+</html>
